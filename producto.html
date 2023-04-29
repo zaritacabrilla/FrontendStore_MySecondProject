@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrontEnd store</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Enlazar la hoja de estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Link de la fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Enlazar la hoja de estilos -->
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"></a> <!-- Al tocar la imagen del logo te llevará a la página principal -->
+    <img class="header__logo" src="img/logo.png" alt="Logotipo">
+    <!-- (alt) es texto alternativo para indicar que es la imagen -->
+  </header>
+
+  <nav class="navegacion">
+    <a class="navegacion__enlace" href="index.html">Tienda</a>
+    <!-- Es un modificador(navegacion__enlace--activo) que es para poner un color permanente en el elemento del menú cuando se seleccione por el usuario -->
+    <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+  </nav>
+
+  <main class="contenedor">
+    <h1>React JSS</h1>
+    <div class="camisa">
+      <img class="camisa__imagen" src="img/3.jpg" alt="imagen de la camisa">
+      <div class="camisa__contenido">
+        <p>Curabitur pharetra, dui ut rutrum commodo, tortor nisi scelerisque purus, in porttitor erat quam eget metus.
+          Donec nunc lacus, vulputate id orci eget, scelerisque molestie quam. Pellentesque sit amet semper nulla.
+          Aliquam rhoncus turpis ut nunc tempus pretium. Ut gravida arcu mauris, ac blandit ligula congue a. </p>
+
+        <form class="formulario"><!-- Código para crear el formulario -->
+          <select class="formulario__campo">
+            <option disabled selectd>--Selecionar talla--</option>
+            <!-- (disable) es un atributo para que el texto no salga como una opción más para seleccionay y (select) para que quede como una indicación -->
+            <option>Chica</option>
+            <option>Mediana</option>
+            <option>Grande</option>
+          </select>
+          <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+          <!-- Para pedir la cantidad de camisas -->
+          <input class="formulario__submit" type="submit" value="Agregar al carrito">
+          <!-- (submit) envía los datos al servidor para que se ejecute el pedido -->
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__texto">Front End Store - Todos los derechos reservados 2023</p>
+  </footer>
+</body>
+
+</html>
